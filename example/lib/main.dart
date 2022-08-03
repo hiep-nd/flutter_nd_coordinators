@@ -4,10 +4,10 @@ import 'package:nd_coordinators/nd_coordinators.dart';
 void main() {
   final flow1Coordinator = MyFlowCoordinator();
 
-  final entryCoordinator = NDEmbeddedCoordinator(
+  final entryCoordinator = NDClosureEmbeddedCoordinator(
       builder: (context) => EntryPage(onPressed: flow1Coordinator.start));
 
-  final appCoordinator = NDApplicationCoordinator(
+  final appCoordinator = NDClosureApplicationCoordinator(
     builder: () => MyApp(
       builder: entryCoordinator.build,
     ),

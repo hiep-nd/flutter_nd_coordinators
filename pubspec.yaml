@@ -1,6 +1,6 @@
 name: nd_coordinators
 description: A small utility library for Coordinator Pattern.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/hiep-nd/flutter_nd_coordinators
 
 environment:
@@ -13,6 +13,8 @@ dependencies:
 
   # Logger
   logging: ^1.0.0
+  
+  nd_core_utils: ^1.0.11
 
 dev_dependencies:
   flutter_test:
